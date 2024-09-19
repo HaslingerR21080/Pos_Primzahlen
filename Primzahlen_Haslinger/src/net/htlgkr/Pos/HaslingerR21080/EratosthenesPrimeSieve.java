@@ -22,6 +22,15 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
 
     @Override
     public void printPrimes() {
-
+        for (int i = 0;i<max;i++){
+            isPrime(i);
+        }
+        for (boolean r : primesAndNoPrimes){
+            if (r){
+                System.out.println("is no Prime");
+            }else {
+                System.out.println("is Prime");
+            }
+        }
     }
 }
